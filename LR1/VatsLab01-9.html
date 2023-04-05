@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="First Project">
+    <meta name="keywords" content="HTML, CSS">
+    <title>Навчальний файл HTML</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 class="header-main">Про себе</h1>
+        <p>
+            Привіт, я <b>Ярослав</b>, мені 17 років, і я живу в місті Полтава. Я завжди був зацікавлений в технологіях та комп'ютерах, тому з часом вирішив,
+            що хочу займатися програмуванням. Це дозволяє мені творити та розробляти щось нове, вирішувати складні задачі та покращувати життя людей за 
+            допомогою технологій. Крім того, я завжди відкритий до вивчення нового та прагну розвиватися у цьому напрямку. Я вірю, що <u>зміна світу на краще 
+            можлива</u> завдяки розвитку технологій, тому я готовий докладати зусиль, щоб стати експертом в області програмування та допомагати робити світ 
+            кращим для всіх нас.
+        </p>
+    </div>
+    
+    <div>
+        <h1>Моє хоббі</h1>
+        <p>
+            <a href="#progamming" class="link"><u><b>Програмування</b></u></a> - це захоплююче хоббі, яке може стати навіть професією. Це дозволяє творити та розробляти різноманітні програми, веб-сайти та 
+            мобільні додатки. Програмування <i>вимагає логічного мислення та творчого підходу</i>, що може бути цікавим викликом для багатьох людей. Якщо
+            ви любите проблеми та вирішення складних завдань, програмування <b>може бути саме тим, що вам потрібно</b>. Крім того, програмування може
+            приносити не тільки задоволення, але й стати важливим навичком у сучасному світі, де технології швидко розвиваються та домінують у
+            багатьох сферах життя.
+        </p>
+
+        <h2 id="progamming">Програмування</h2>
+        <code class="card">
+            const createAllServerNotes = () => {<br>
+                &ensp;$.ajax({<br>
+                    &ensp;&ensp;method: "GET",<br>
+                    &ensp;&ensp;url: "/notes/get",<br>
+                    &ensp;&ensp;success: function (response) {<br>
+                        &ensp;&ensp;&ensp;response.forEach(x => {<br>
+                            &ensp;&ensp;&ensp;&ensp;notesRoot.append(createServerNoteElement(x.id, x.title, x.content, x.creationDate))<br>
+                        &ensp;&ensp;&ensp;})<br>
+                    &ensp;&ensp;},<br>
+                    &ensp;&ensp;error: function () {<br>
+                        &ensp;&ensp;&ensp;alert("Something went wrong while processing your request.")<br>
+                    &ensp;&ensp;}<br>
+                &ensp;})<br>
+            }
+        </code>
+        <code class="card">
+            public class Player : MonoBehaviour <br>
+            {<br>
+                &ensp;public float CurrentHealth = 100;<br>
+                &ensp;public float MaxHealth = 100;<br><br>
+            
+                &ensp;public Action<float, float> HealthChanged;<br><br>
+            
+                &ensp;private void Start()<br>
+                &ensp;{<br>
+                &ensp;    CurrentHealth = MaxHealth;<br>
+                &ensp;}<br><br>
+                
+                &ensp;public void TakeDamage(float value) <br>
+                &ensp;{<br>
+                &ensp;    CurrentHealth -= value;<br><br>
+                
+                &ensp;    if (CurrentHealth <= 0)<br>
+                &ensp;    {<br>
+                &ensp;        CurrentHealth = 0;<br>
+                &ensp;        Kill();<br>
+                &ensp;    }<br><br>
+                
+                &ensp;    HealthChanged?.Invoke(CurrentHealth, MaxHealth);<br>
+                &ensp;}<br><br>
+                
+                &ensp;public void Kill() <br>
+                &ensp;{<br>
+                &ensp;    Debug.Log("Player defeated");<br>
+                &ensp;    Destroy(gameObject);<br>
+                &ensp;}<br><br>
+            }
+        </code>
+        <code class="card">
+            @Controller <br>
+            public class NoteController { <br> <br>
+            
+                &ensp;@Autowired<br>
+                &ensp;private NoteService noteService;<br><br>
+            
+                &ensp;@Autowired<br>
+                &ensp;private AccountService accountService;<br><br>
+            
+                &ensp;@GetMapping("/notes")<br>
+                &ensp;public String notes() {<br>
+                &ensp;    return "notes";<br>
+                &ensp;}<br>
+                &ensp;...<br>
+            }
+        </code>
+    </div>
+    
+    <div class="caption"><u><i>Студент групи 103ТК Ваць Я.Р.</i></u></div>
+</body>
+</html>
