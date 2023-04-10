@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .background {
+            background-image: url("./background.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .lines {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lines li {
+            width: 90%;
+            background-color: brown;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            padding: 5px;
+            border-radius: 5px;
+
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body class="background">
+    <ol class="lines">
+        <li><marquee behavior="alternate">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum tenetur dicta id ipsum temporibus ullam, repellendus maxime corrupti recusandae. Voluptas illo laborum autem molestias consequuntur nihil ex, expedita accusantium ipsum!</marquee></li>
+        <li><marquee direction="left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum tenetur dicta id ipsum temporibus ullam, repellendus maxime corrupti recusandae. Voluptas illo laborum autem molestias consequuntur nihil ex, expedita accusantium ipsum!</marquee></li>
+        <li><marquee behavior="slide" direction="right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum tenetur dicta id ipsum temporibus ullam, repellendus maxime corrupti recusandae. Voluptas illo laborum autem molestias consequuntur nihil ex, expedita accusantium ipsum!</marquee></li>
+        <li><marquee direction="right" scrollamount="10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum tenetur dicta id ipsum temporibus ullam, repellendus maxime corrupti recusandae. Voluptas illo laborum autem molestias consequuntur nihil ex, expedita accusantium ipsum!</marquee></li>
+        <li><marquee direction="right" scrolldelay="1000">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum tenetur dicta id ipsum temporibus ullam, repellendus maxime corrupti recusandae. Voluptas illo laborum autem molestias consequuntur nihil ex, expedita accusantium ipsum!</marquee></li>
+    </ol>
+</body>
+</html>

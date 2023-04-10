@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .background {
+            background-image: url("./background.webp");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .lines {
+            list-style: none;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .lines li {
+            height: 90%;
+            background-color: brown;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+
+            font-size: 20px;
+        }
+
+        .lines li marquee {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+    </style>
+</head>
+<body class="background">
+    <ol class="lines">
+        <li><marquee behavior="alternate" direction="down"><img src="faust.webp" alt="Faust" width="90" height="130"></marquee></li>
+        <li><marquee behavior="scroll" direction="down"><img src="faust.webp" alt="Faust" width="90" height="130"><img src="may.webp" alt="Faust" width="90" height="130"></marquee></li>
+        <li><marquee behavior="slide" direction="down"><img src="faust.webp" alt="Faust" width="90" height="130"><img src="may.webp" alt="Faust" width="90" height="130"></marquee></li>
+        <li><marquee behavior="scroll" direction="down" scrollamount="10"><img src="faust.webp" alt="Faust" width="90" height="130"><img src="may.webp" alt="Faust" width="90" height="130"></marquee></li>
+        <li><marquee behavior="scroll" direction="down" scrolldelay="1000"><img src="faust.webp" alt="Faust" width="90" height="130"><img src="may.webp" alt="Faust" width="90" height="130"></marquee></li>
+    </ol>
+</body>
+</html>
