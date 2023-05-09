@@ -1,0 +1,29 @@
+.block {
+    border: 1px solid gray;
+}
+
+@media (min-width: 1200px) {
+    .header-left {
+        background-color: yellow;
+    }
+
+    .footer-right {
+        background-color: yellow;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+    .header-right {
+        background-color: red;
+    }
+
+    .main-center {
+        background-color: red;
+    }
+
+    .footer-left {
+        background-color: red;
+    }
+}
