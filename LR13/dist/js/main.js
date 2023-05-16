@@ -1,0 +1,1 @@
+const sum=(s,c)=>s+c;

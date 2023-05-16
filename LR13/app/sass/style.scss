@@ -1,0 +1,86 @@
+
+$primary: #282828;
+$primary-darker: #121212;
+$primary-dark: #000000;
+$secondary: #320064;
+$secondary-darker: #230046;
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+
+  font: {
+    family: "Times New Roman";
+    size: 18px;
+  }
+  color: white;
+}
+
+header {
+  width: 100%;
+  background-color: $primary-darker;
+
+  nav {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      height: 40px;
+      margin: 5px;
+    }
+
+    ol {
+      list-style: none;
+      display: flex;
+      padding-left: 200px;
+
+      li {
+        margin: 5px;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+main {
+  flex: 1;
+  background-color: $primary;
+  display: flex;
+
+  .container {
+    width: 100%;
+    height: auto;
+
+    .header {
+      background-color: $primary-dark;
+      margin: 5px;
+    }
+  }
+}
+
+footer {
+  background-color: $primary-darker;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    label {
+      margin: 5px
+    }
+  }
+}
