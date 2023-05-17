@@ -57,14 +57,8 @@ gulp.task("transfer-html", () => {
 })
 
 gulp.task("watch", () => {
-    gulp.watch("./app/sass/*.scss", (done) => {
-        gulp.series("compile-scss", "clean-css")(done)
-    });
-    gulp.watch("./app/*.html", (done) => {
-        gulp.series("transfer-html")(done)
-    });
+    gulp.watch("./app/sass/*.scss", gulp.series("compile-scss", "clean-css"));
+    gulp.watch("./app/*.html", gulp.series("transfer-html"));
 })
 
-gulp.task("compile", async () => {
-    await gulp.series("compile-scss", "clean-css", "uglify", "imagemin", "transfer-html")();
-})
+gulp.task("compile", gulp.series("compile-scss", "clean-css", "uglify", "imagemin", "transfer-html"))

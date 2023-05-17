@@ -11,7 +11,7 @@ body {
 * {
   padding: 0;
   margin: 0;
-  font-family: "Times New Roman";
+  font-family: "Arial";
   font-size: 18px;
   color: white;
 }
@@ -45,16 +45,79 @@ main {
   flex: 1;
   background-color: #282828;
   display: flex;
+  flex-direction: column;
 }
 main .container {
-  width: 100%;
-  height: auto;
+  margin: 5px;
+  min-height: 340px;
+  background-color: #121212;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
 main .container .header {
-  background-color: #000000;
   margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #282828;
+  display: flex;
+  justify-content: space-between;
+}
+main .container .header label {
+  padding: 2px;
+}
+main .container .header a {
+  padding: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  border-radius: 15px;
+  background-color: #000000;
 }
 
+.film-list {
+  flex: 1;
+  margin: 5px;
+  background-color: #282828;
+  border-radius: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.film-list .film-item {
+  margin: 5px;
+  width: 200px;
+  height: 280px;
+  background-color: #121212;
+  border-radius: 5px;
+  border: 3px solid #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+.film-list .film-item .film-image {
+  width: 180px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 5px;
+}
+.film-list .film-item .film-description {
+  text-align: center;
+  margin-left: 2px;
+  margin-right: 2px;
+  color: lightgray;
+  font-size: 14px;
+}
+
+@media (max-width: 660px) {
+  .film-item {
+    width: 46% !important;
+  }
+}
+@media (max-width: 550px) {
+  .film-item {
+    width: 98% !important;
+  }
+}
 footer {
   background-color: #121212;
   display: flex;
