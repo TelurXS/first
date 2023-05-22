@@ -92,3 +92,19 @@ validableInputs.forEach(input => {
         }
     })
 })
+
+// 9
+let squares = document.querySelectorAll(".square");
+
+squares.forEach(square => {
+
+    square.style.backgroundColor = "gold";
+
+    square.addEventListener("click", event => {
+        let previousColor = square.getAttribute("previous-color");
+        let currentColor = square.style.backgroundColor;
+        console.log(square.style)
+        square.style.backgroundColor = previousColor;
+        square.setAttribute("previous-color", currentColor);
+    })
+})
