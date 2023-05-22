@@ -14,3 +14,11 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+input.success {
+    border: 3px solid green;
+}
+
+input.error {
+    border: 3px solid red;
+}
