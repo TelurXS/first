@@ -1,0 +1,53 @@
+.block {
+    border: 1px solid gray;
+}
+
+
+@media (min-width: 768px) {
+    .pink-md {
+        background-color: pink;
+    }
+}
+
+@media (max-width: 767px) {
+    .pink-md {
+        background-color: white;
+    }
+
+    .green-text-sm {
+        color: green;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 992px) {
+    .red-lg {
+        background-color: red;
+    }
+
+    .pink-md {
+        background-color: white;
+    }
+}
+
+@media (max-width: 991px) {
+    .red-lg {
+        background-color: white;
+    }
+}
+
+@media (min-width: 1200px) {
+    .yellow-xl {
+        background-color: yellow;
+    }
+
+    .red-lg {
+        background-color: white;
+    }
+}
+
+@media (max-width: 1199px) {
+    .yellow-xl {
+        background-color: white;
+    }
+}
